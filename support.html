@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hỗ trợ — Trạm Thiền Trà</title>
+  <title>Hỗ trợ — Trạm Thiền Trà / Support — ZenTea</title>
   <meta name="description" content="Trung tâm hỗ trợ Trạm Thiền Trà. Câu hỏi thường gặp và thông tin liên hệ để được hỗ trợ sử dụng ứng dụng.">
   <meta property="og:title" content="Hỗ trợ — Trạm Thiền Trà">
   <meta property="og:description" content="Trung tâm hỗ trợ và câu hỏi thường gặp của ứng dụng Trạm Thiền Trà.">
@@ -19,17 +19,30 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="site-logo">Trạm Thiền Trà</a>
-      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav').classList.toggle('is-open')">
-        <span></span><span></span><span></span>
-      </button>
-      <nav>
-        <ul class="site-nav">
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="privacy.html">Chính sách</a></li>
-          <li><a href="support.html" class="active">Hỗ trợ</a></li>
-        </ul>
-      </nav>
+      <a href="index.html" class="site-logo">
+        <span class="lang-vi">Trạm Thiền Trà</span>
+        <span class="lang-en">ZenTea</span>
+      </a>
+      
+      <div class="header-actions">
+        <nav>
+          <ul class="site-nav">
+            <li><a href="index.html"><span class="lang-vi">Trang chủ</span><span class="lang-en">Home</span></a></li>
+            <li><a href="privacy.html"><span class="lang-vi">Chính sách</span><span class="lang-en">Privacy</span></a></li>
+            <li><a href="support.html" class="active"><span class="lang-vi">Hỗ trợ</span><span class="lang-en">Support</span></a></li>
+          </ul>
+        </nav>
+        
+        <div class="lang-switch-btn" id="langSwitcher" title="Switch Language">
+          <div class="lang-switch-slider"></div>
+          <div class="lang-text vi">VI</div>
+          <div class="lang-text en">EN</div>
+        </div>
+
+        <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav').classList.toggle('is-open')">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -37,8 +50,14 @@
     <!-- Page Header -->
     <section class="page-header">
       <div class="container">
-        <h1>Trung tâm hỗ trợ</h1>
-        <p>Chúng tôi luôn sẵn sàng giúp đỡ bạn</p>
+        <h1>
+          <span class="lang-vi">Trung tâm hỗ trợ</span>
+          <span class="lang-en">Support Center</span>
+        </h1>
+        <p>
+          <span class="lang-vi">Chúng tôi luôn sẵn sàng giúp đỡ bạn</span>
+          <span class="lang-en">We are always here to help you</span>
+        </p>
       </div>
     </section>
 
@@ -46,179 +65,222 @@
     <section class="section">
       <div class="container">
         <div class="contact-card">
-          <h3>Liên hệ với chúng tôi</h3>
+          <h3>
+            <span class="lang-vi">Liên hệ với chúng tôi</span>
+            <span class="lang-en">Contact us</span>
+          </h3>
           <a href="mailto:support@tramthientra.com" class="contact-email">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 6L10 12L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             support@tramthientra.com
           </a>
-          <p class="response-time">Thời gian phản hồi: trong vòng 48 giờ</p>
+          <p class="response-time">
+            <span class="lang-vi">Thời gian phản hồi: trong vòng 48 giờ</span>
+            <span class="lang-en">Response time: within 48 hours</span>
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section - Vietnamese -->
+    <!-- FAQ Section -->
     <section class="section section--alt">
       <div class="container">
         <div class="faq-section">
-          <h2>Câu hỏi thường gặp</h2>
+          <h2>
+            <span class="lang-vi">Câu hỏi thường gặp</span>
+            <span class="lang-en">Frequently Asked Questions</span>
+          </h2>
 
           <details class="faq-item">
-            <summary>Làm thế nào để sử dụng ứng dụng?</summary>
+            <summary>
+              <span class="lang-vi">Làm thế nào để sử dụng ứng dụng?</span>
+              <span class="lang-en">How do I use the app?</span>
+            </summary>
             <div class="faq-answer">
-              <p>Sau khi tải và mở ứng dụng, bạn sẽ được hướng dẫn qua các bước giới thiệu. Ứng dụng có ba tính năng chính:</p>
-              <p><strong>Bài tập thở:</strong> Chọn một bài tập thở và làm theo hướng dẫn trên màn hình. Hít vào, giữ và thở ra theo nhịp độ được hiển thị.</p>
-              <p><strong>Nhật ký tri ân:</strong> Mỗi ngày, hãy ghi lại những điều bạn cảm thấy tri ân. Việc này giúp nuôi dưỡng sự tích cực và lòng tri ân trong cuộc sống.</p>
-              <p><strong>Âm nhạc thư giãn:</strong> Bật nhạc nền thư giãn trong khi thực hành hoặc bất kỳ lúc nào bạn muốn thư giãn.</p>
+              <p>
+                <span class="lang-vi">Sau khi tải và mở ứng dụng, bạn sẽ được hướng dẫn qua các bước giới thiệu. Ứng dụng có ba tính năng chính:</span>
+                <span class="lang-en">After downloading and opening the app, you will be guided through an onboarding process. The app has three main features:</span>
+              </p>
+              <p>
+                <strong class="lang-vi">Bài tập thở:</strong>
+                <strong class="lang-en">Breathing exercises:</strong>
+                <span class="lang-vi"> Chọn một bài tập thở và làm theo hướng dẫn trên màn hình. Hít vào, giữ và thở ra theo nhịp độ được hiển thị.</span>
+                <span class="lang-en"> Choose a breathing exercise and follow the on-screen guidance. Breathe in, hold, and breathe out following the displayed rhythm.</span>
+              </p>
+              <p>
+                <strong class="lang-vi">Nhật ký tri ân:</strong>
+                <strong class="lang-en">Gratitude journal:</strong>
+                <span class="lang-vi"> Mỗi ngày, hãy ghi lại những điều bạn cảm thấy tri ân. Việc này giúp nuôi dưỡng sự tích cực và lòng tri ân trong cuộc sống.</span>
+                <span class="lang-en"> Each day, write down things you feel grateful for. This helps cultivate positivity and gratitude in your life.</span>
+              </p>
+              <p>
+                <strong class="lang-vi">Âm nhạc thư giãn:</strong>
+                <strong class="lang-en">Relaxation music:</strong>
+                <span class="lang-vi"> Bật nhạc nền thư giãn trong khi thực hành hoặc bất kỳ lúc nào bạn muốn thư giãn.</span>
+                <span class="lang-en"> Play background relaxation music while practicing or anytime you want to relax.</span>
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Làm thế nào để cài đặt thông báo nhắc nhở?</summary>
+            <summary>
+              <span class="lang-vi">Làm thế nào để cài đặt thông báo nhắc nhở?</span>
+              <span class="lang-en">How do I configure notification reminders?</span>
+            </summary>
             <div class="faq-answer">
-              <p>Để cài đặt thông báo nhắc nhở hàng ngày:</p>
-              <p>1. Khi sử dụng ứng dụng lần đầu, bạn sẽ được hỏi về quyền thông báo. Hãy chọn "Cho phép".</p>
-              <p>2. Nếu bạn đã từ chối trước đó, hãy vào <strong>Cài đặt</strong> > <strong>Trạm Thiền Trà</strong> > <strong>Thông báo</strong> trên thiết bị của bạn để bật lại.</p>
-              <p>3. Bạn có thể tùy chỉnh thời gian nhắc nhở trong phần cài đặt của ứng dụng.</p>
+              <p>
+                <span class="lang-vi">Để cài đặt thông báo nhắc nhở hàng ngày:</span>
+                <span class="lang-en">To configure daily reminders:</span>
+              </p>
+              <p>
+                <span class="lang-vi">1. Khi sử dụng ứng dụng lần đầu, bạn sẽ được hỏi về quyền thông báo. Hãy chọn "Cho phép".</span>
+                <span class="lang-en">1. When using the app for the first time, you will be asked about notification permission. Choose "Allow".</span>
+              </p>
+              <p>
+                <span class="lang-vi">2. Nếu bạn đã từ chối trước đó, hãy vào <strong>Cài đặt</strong> > <strong>Trạm Thiền Trà</strong> > <strong>Thông báo</strong> trên thiết bị của bạn để bật lại.</span>
+                <span class="lang-en">2. If you previously declined, go to <strong>Settings</strong> > <strong>Tram Thien Tra</strong> > <strong>Notifications</strong> on your device to enable them.</span>
+              </p>
+              <p>
+                <span class="lang-vi">3. Bạn có thể tùy chỉnh thời gian nhắc nhở trong phần cài đặt của ứng dụng.</span>
+                <span class="lang-en">3. You can customize reminder times within the app settings.</span>
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Dữ liệu của tôi được lưu trữ ở đâu?</summary>
+            <summary>
+              <span class="lang-vi">Dữ liệu của tôi được lưu trữ ở đâu?</span>
+              <span class="lang-en">Where is my data stored?</span>
+            </summary>
             <div class="faq-answer">
-              <p>Mọi dữ liệu của bạn được lưu trữ <strong>hoàn toàn trên thiết bị</strong> của bạn. Chúng tôi không có máy chủ hay dịch vụ đám mây nào. Điều này có nghĩa là:</p>
-              <p>- Dữ liệu của bạn hoàn toàn riêng tư và an toàn</p>
-              <p>- Không ai khác có thể truy cập dữ liệu của bạn</p>
-              <p>- Ứng dụng hoạt động bình thường cả khi không có kết nối internet</p>
-              <p>Xem thêm chi tiết tại trang <a href="privacy.html">Chính sách bảo mật</a>.</p>
+              <p>
+                <span class="lang-vi">Mọi dữ liệu của bạn được lưu trữ <strong>hoàn toàn trên thiết bị</strong> của bạn. Chúng tôi không có máy chủ hay dịch vụ đám mây nào. Điều này có nghĩa là:</span>
+                <span class="lang-en">All your data is stored <strong>entirely on your device</strong>. We have no servers or cloud services. This means:</span>
+              </p>
+              <p>
+                <span class="lang-vi">- Dữ liệu của bạn hoàn toàn riêng tư và an toàn</span>
+                <span class="lang-en">- Your data is completely private and secure</span>
+              </p>
+              <p>
+                <span class="lang-vi">- Không ai khác có thể truy cập dữ liệu của bạn</span>
+                <span class="lang-en">- No one else can access your data</span>
+              </p>
+              <p>
+                <span class="lang-vi">- Ứng dụng hoạt động bình thường cả khi không có kết nối internet</span>
+                <span class="lang-en">- The app works normally even without internet connection</span>
+              </p>
+              <p>
+                <span class="lang-vi">Xem thêm chi tiết tại trang <a href="privacy.html">Chính sách bảo mật</a>.</span>
+                <span class="lang-en">See our <a href="privacy.html">Privacy Policy</a> for more details.</span>
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Đăng nhập bằng Apple ID hoạt động như thế nào?</summary>
+            <summary>
+              <span class="lang-vi">Đăng nhập bằng Apple ID hoạt động như thế nào?</span>
+              <span class="lang-en">How does Apple Sign In work?</span>
+            </summary>
             <div class="faq-answer">
-              <p>Trạm Thiền Trà hỗ trợ đăng nhập bằng Apple Sign In. Khi bạn sử dụng tính năng này:</p>
-              <p>- Chỉ có Apple User ID được lưu trữ cục bộ trên thiết bị của bạn thông qua Keychain</p>
-              <p>- Chúng tôi <strong>không</strong> thu thập email, tên hay bất kỳ thông tin cá nhân nào từ tài khoản Apple của bạn</p>
-              <p>- Chúng tôi <strong>không</strong> gửi bất kỳ dữ liệu nào lên máy chủ</p>
-              <p>Việc đăng nhập giúp bảo mật trải nghiệm của bạn trên thiết bị, không sử dụng để theo dõi hay thu thập dữ liệu.</p>
+              <p>
+                <span class="lang-vi">Trạm Thiền Trà hỗ trợ đăng nhập bằng Apple Sign In. Khi bạn sử dụng tính năng này:</span>
+                <span class="lang-en">ZenTea supports Apple Sign In. When you use this feature:</span>
+              </p>
+              <p>
+                <span class="lang-vi">- Chỉ có Apple User ID được lưu trữ cục bộ trên thiết bị của bạn thông qua Keychain</span>
+                <span class="lang-en">- Only your Apple User ID is stored locally on your device via Keychain</span>
+              </p>
+              <p>
+                <span class="lang-vi">- Chúng tôi <strong>không</strong> thu thập email, tên hay bất kỳ thông tin cá nhân nào từ tài khoản Apple của bạn</span>
+                <span class="lang-en">- We do <strong>not</strong> collect your email, name, or any personal information from your Apple account</span>
+              </p>
+              <p>
+                <span class="lang-vi">- Chúng tôi <strong>không</strong> gửi bất kỳ dữ liệu nào lên máy chủ</span>
+                <span class="lang-en">- We do <strong>not</strong> send any data to servers</span>
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Làm thế nào để xóa dữ liệu của tôi?</summary>
+            <summary>
+              <span class="lang-vi">Làm thế nào để xóa dữ liệu của tôi?</span>
+              <span class="lang-en">How do I delete my data?</span>
+            </summary>
             <div class="faq-answer">
-              <p>Vì mọi dữ liệu được lưu trữ cục bộ trên thiết bị, bạn có thể xóa toàn bộ dữ liệu bằng cách:</p>
-              <p><strong>Cách 1:</strong> Xóa ứng dụng khỏi thiết bị. Toàn bộ dữ liệu sẽ bị xóa vĩnh viễn khi bạn gỡ bỏ ứng dụng.</p>
-              <p><strong>Cách 2:</strong> Vào <strong>Cài đặt</strong> > <strong>Cài đặt chung</strong> > <strong>Dung lượng iPhone</strong> > <strong>Trạm Thiền Trà</strong> > <strong>Xóa ứng dụng</strong>.</p>
-              <p>Lưu ý: Sau khi xóa, dữ liệu không thể khôi phục được vì chúng tôi không lưu trữ bản sao trên máy chủ.</p>
+              <p>
+                <span class="lang-vi">Vì mọi dữ liệu được lưu trữ cục bộ trên thiết bị, bạn có thể xóa toàn bộ dữ liệu bằng cách:</span>
+                <span class="lang-en">Since all data is stored locally on your device, you can delete all data by:</span>
+              </p>
+              <p>
+                <span class="lang-vi"><strong>Cách 1:</strong> Xóa ứng dụng khỏi thiết bị. Toàn bộ dữ liệu sẽ bị xóa vĩnh viễn khi bạn gỡ bỏ ứng dụng.</span>
+                <span class="lang-en"><strong>Option 1:</strong> Delete the app from your device. All data will be permanently deleted when you uninstall the app.</span>
+              </p>
+              <p>
+                <span class="lang-vi"><strong>Cách 2:</strong> Vào <strong>Cài đặt</strong> > <strong>Cài đặt chung</strong> > <strong>Dung lượng iPhone</strong> > <strong>Trạm Thiền Trà</strong> > <strong>Xóa ứng dụng</strong>.</span>
+                <span class="lang-en"><strong>Option 2:</strong> Go to <strong>Settings</strong> > <strong>General</strong> > <strong>iPhone Storage</strong> > <strong>Tram Thien Tra</strong> > <strong>Delete App</strong>.</span>
+              </p>
+              <p>
+                <span class="lang-vi">Lưu ý: Sau khi xóa, dữ liệu không thể khôi phục được vì chúng tôi không lưu trữ bản sao trên máy chủ.</span>
+                <span class="lang-en">Note: After deletion, data cannot be recovered as we do not store backups on any server.</span>
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Làm thế nào để cài đặt và sử dụng widget?</summary>
+            <summary>
+              <span class="lang-vi">Làm thế nào để cài đặt và sử dụng widget?</span>
+              <span class="lang-en">How do I set up and use the widget?</span>
+            </summary>
             <div class="faq-answer">
-              <p>Để thêm widget Trạm Thiền Trà lên màn hình chính:</p>
-              <p>1. Nhấn giữ vào vùng trống trên màn hình chính cho đến khi các biểu tượng rung.</p>
-              <p>2. Nhấn vào nút <strong>"+"</strong> ở góc trên bên trái.</p>
-              <p>3. Tìm kiếm "Trạm Thiền Trà" trong danh sách widget.</p>
-              <p>4. Chọn kích thước widget mong muốn và nhấn <strong>"Thêm widget"</strong>.</p>
-              <p>Widget hiển thị số ngày thực hành liên tục (tích luỹ) và ngày ghi nhật ký tri ân gần nhất. Dữ liệu được tự động cập nhật khi bạn sử dụng ứng dụng.</p>
-              <p><strong>Khắc phục sự cố:</strong> Nếu widget không hiển thị dữ liệu, hãy mở ứng dụng một lần để đồng bộ dữ liệu, sau đó quay lại màn hình chính.</p>
+              <p>
+                <span class="lang-vi">Để thêm widget Trạm Thiền Trà lên màn hình chính:</span>
+                <span class="lang-en">To add the widget to your home screen:</span>
+              </p>
+              <p>
+                <span class="lang-vi">1. Nhấn giữ vào vùng trống trên màn hình chính cho đến khi các biểu tượng rung.</span>
+                <span class="lang-en">1. Long-press on an empty area of your home screen until the icons jiggle.</span>
+              </p>
+              <p>
+                <span class="lang-vi">2. Nhấn vào nút <strong>"+"</strong> ở góc trên bên trái.</span>
+                <span class="lang-en">2. Tap the <strong>"+"</strong> button in the top-left corner.</span>
+              </p>
+              <p>
+                <span class="lang-vi">3. Tìm kiếm "Trạm Thiền Trà" trong danh sách widget.</span>
+                <span class="lang-en">3. Search for "Tram Thien Tra" in the widget list.</span>
+              </p>
+              <p>
+                <span class="lang-vi">4. Chọn kích thước widget mong muốn và nhấn <strong>"Thêm widget"</strong>.</span>
+                <span class="lang-en">4. Select your desired widget size and tap <strong>"Add Widget"</strong>.</span>
+              </p>
+              <p>
+                <span class="lang-vi">Widget hiển thị số ngày thực hành liên tục (tích luỹ) và ngày ghi nhật ký tri ân gần nhất. Dữ liệu được tự động cập nhật khi bạn sử dụng ứng dụng.</span>
+                <span class="lang-en">The widget displays your streak count and last gratitude date. Data updates automatically when you use the app.</span>
+              </p>
+              <p>
+                <span class="lang-vi"><strong>Khắc phục sự cố:</strong> Nếu widget không hiển thị dữ liệu, hãy mở ứng dụng một lần để đồng bộ dữ liệu, sau đó quay lại màn hình chính.</span>
+                <span class="lang-en"><strong>Troubleshooting:</strong> If the widget does not display data, open the app once to sync data, then return to the home screen.</span>
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Ứng dụng có cần kết nối internet không?</summary>
+            <summary>
+              <span class="lang-vi">Ứng dụng có cần kết nối internet không?</span>
+              <span class="lang-en">Does the app require an internet connection?</span>
+            </summary>
             <div class="faq-answer">
-              <p><strong>Không.</strong> Trạm Thiền Trà hoạt động hoàn toàn ngoại tuyến (offline). Tất cả tính năng bao gồm bài tập thở, nhật ký tri ân và âm nhạc thư giãn đều hoạt động mà không cần kết nối internet.</p>
-              <p>Âm nhạc thư giãn được tạo bằng công nghệ tổng hợp âm thanh trên thiết bị, không cần tải về từ máy chủ.</p>
+              <p>
+                <strong class="lang-vi">Không.</strong>
+                <strong class="lang-en">No.</strong>
+                <span class="lang-vi"> Trạm Thiền Trà hoạt động hoàn toàn ngoại tuyến (offline). Tất cả tính năng bao gồm bài tập thở, nhật ký tri ân và âm nhạc thư giãn đều hoạt động mà không cần kết nối internet.</span>
+                <span class="lang-en"> The app works entirely offline. All features including breathing exercises, gratitude journal, and relaxation music work without internet access.</span>
+              </p>
+              <p>
+                <span class="lang-vi">Âm nhạc thư giãn được tạo bằng công nghệ tổng hợp âm thanh trên thiết bị, không cần tải về từ máy chủ.</span>
+                <span class="lang-en">Relaxation music is generated using on-device procedural audio synthesis, no server downloads required.</span>
+              </p>
             </div>
           </details>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- English Translation -->
-    <section class="section">
-      <div class="container">
-        <div class="faq-section">
-          <div class="lang-section" style="border-top:none;margin-top:0;padding-top:0">
-            <span class="lang-label">English</span>
-          </div>
-
-          <h2>Frequently Asked Questions</h2>
-
-          <details class="faq-item">
-            <summary>How do I use the app?</summary>
-            <div class="faq-answer">
-              <p>After downloading and opening the app, you will be guided through an onboarding process. The app has three main features:</p>
-              <p><strong>Breathing exercises:</strong> Choose a breathing exercise and follow the on-screen guidance. Breathe in, hold, and breathe out following the displayed rhythm.</p>
-              <p><strong>Gratitude journal:</strong> Each day, write down things you feel grateful for. This helps cultivate positivity and gratitude in your life.</p>
-              <p><strong>Relaxation music:</strong> Play background relaxation music while practicing or anytime you want to relax.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>How do I configure notification reminders?</summary>
-            <div class="faq-answer">
-              <p>1. When using the app for the first time, you will be asked about notification permission. Choose "Allow".</p>
-              <p>2. If you previously declined, go to <strong>Settings</strong> > <strong>Tram Thien Tra</strong> > <strong>Notifications</strong> on your device to enable them.</p>
-              <p>3. You can customize reminder times within the app settings.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Where is my data stored?</summary>
-            <div class="faq-answer">
-              <p>All your data is stored <strong>entirely on your device</strong>. We have no servers or cloud services. This means your data is completely private and secure, no one else can access it, and the app works normally even without internet connection.</p>
-              <p>See our <a href="privacy.html">Privacy Policy</a> for more details.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>How does Apple Sign In work?</summary>
-            <div class="faq-answer">
-              <p>Tram Thien Tra supports Apple Sign In. When you use this feature, only your Apple User ID is stored locally on your device via Keychain. We do <strong>not</strong> collect your email, name, or any personal information from your Apple account. We do <strong>not</strong> send any data to servers.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>How do I delete my data?</summary>
-            <div class="faq-answer">
-              <p><strong>Option 1:</strong> Delete the app from your device. All data will be permanently deleted when you uninstall the app.</p>
-              <p><strong>Option 2:</strong> Go to <strong>Settings</strong> > <strong>General</strong> > <strong>iPhone Storage</strong> > <strong>Tram Thien Tra</strong> > <strong>Delete App</strong>.</p>
-              <p>Note: After deletion, data cannot be recovered as we do not store backups on any server.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>How do I set up and use the widget?</summary>
-            <div class="faq-answer">
-              <p>To add the Tram Thien Tra widget to your home screen:</p>
-              <p>1. Long-press on an empty area of your home screen until the icons jiggle.</p>
-              <p>2. Tap the <strong>"+"</strong> button in the top-left corner.</p>
-              <p>3. Search for "Tram Thien Tra" in the widget list.</p>
-              <p>4. Select your desired widget size and tap <strong>"Add Widget"</strong>.</p>
-              <p>The widget displays your streak count and last gratitude date. Data updates automatically when you use the app.</p>
-              <p><strong>Troubleshooting:</strong> If the widget does not display data, open the app once to sync data, then return to the home screen.</p>
-            </div>
-          </details>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="contact-card">
-          <h3>Still need help?</h3>
-          <a href="mailto:support@tramthientra.com" class="contact-email">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 6L10 12L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            support@tramthientra.com
-          </a>
-          <p class="response-time">Response time: within 48 hours</p>
         </div>
       </div>
     </section>
@@ -230,19 +292,55 @@
     <div class="container">
       <div class="footer-content">
         <div>
-          <div class="footer-brand">Trạm Thiền Trà</div>
-          <div class="footer-tagline">Chánh niệm &middot; Tri ân &middot; Tự chăm sóc</div>
+          <div class="footer-brand">
+            <span class="lang-vi">Trạm Thiền Trà</span>
+            <span class="lang-en">ZenTea</span>
+          </div>
+          <div class="footer-tagline">
+            <span class="lang-vi">Chánh niệm &middot; Tri ân &middot; Tự chăm sóc</span>
+            <span class="lang-en">Mindfulness &middot; Gratitude &middot; Self-care</span>
+          </div>
         </div>
         <ul class="footer-links">
-          <li><a href="privacy.html">Chính sách bảo mật</a></li>
-          <li><a href="support.html">Hỗ trợ</a></li>
+          <li><a href="privacy.html">
+            <span class="lang-vi">Chính sách bảo mật</span>
+            <span class="lang-en">Privacy Policy</span>
+          </a></li>
+          <li><a href="support.html">
+            <span class="lang-vi">Hỗ trợ</span>
+            <span class="lang-en">Support</span>
+          </a></li>
         </ul>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Trạm Thiền Trà. All rights reserved.
+        &copy; 2026 ZenTea. All rights reserved.
       </div>
     </div>
   </footer>
 
+  <script>
+    // Internationalization Script
+    const langSwitcher = document.getElementById('langSwitcher');
+    
+    function setLanguage(lang) {
+      if (lang === 'en') {
+        document.body.classList.add('en-mode');
+        document.documentElement.lang = 'en';
+      } else {
+        document.body.classList.remove('en-mode');
+        document.documentElement.lang = 'vi';
+      }
+      localStorage.setItem('zentea_lang', lang);
+    }
+
+    // Initialize from local storage
+    const savedLang = localStorage.getItem('zentea_lang') || 'vi';
+    setLanguage(savedLang);
+
+    langSwitcher.addEventListener('click', () => {
+      const isEn = document.body.classList.contains('en-mode');
+      setLanguage(isEn ? 'vi' : 'en');
+    });
+  </script>
 </body>
 </html>
